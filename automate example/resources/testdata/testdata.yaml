@@ -1,0 +1,26 @@
+login:
+    username: test_signup@mail.com
+    password: Aa@123456
+
+pop_up:
+    pop_up_login_success:       Login successfully
+    pop_up_add_to_cart_success: Add product successfully
+    pop_up_payment_success: Payment successfully
+    
+product:
+    product_1: Doppee phone
+    product_2: phone
+    product_3: Aoppee phone
+
+delivery_info:
+    name: Pao
+    surname: sup
+    address: doppio tech
+    phone_number: 0822345678
+    email: ppao@doppiotech.com
+
+cc_detail:
+    cc_pan: 4111111111111111
+    cc_exp: 12/2030
+    cc_cvc: 123
+    cc_name: Doppio tech

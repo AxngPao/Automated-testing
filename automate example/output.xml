@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.6 on win32)" generated="2025-03-27T11:51:40.027605" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment" source="c:\Users\Bunyawat.s\Desktop\automate day2\testcase\assignment.robot">
+<test id="s1-t1" name="TC001" line="9">
+<kw name="Open browser" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-27T11:51:40.392730" level="INFO">Opening browser 'gc' to base url 'https://training-platform.doppio-tech.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-27T11:51:40.392730" elapsed="6.853048"/>
+</kw>
+<status status="PASS" start="2025-03-27T11:51:40.391697" elapsed="6.854081"/>
+</kw>
+<kw name="Click button login" owner="login_page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-27T11:51:47.247778" level="INFO">Clicking element 'xpath=//header[@class="ant-layout-header header"]//span[@aria-label="user"]'.</msg>
+<arg>${login_locator.btn_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-27T11:51:47.247778" elapsed="0.145577"/>
+</kw>
+<status status="PASS" start="2025-03-27T11:51:47.246777" elapsed="0.147575"/>
+</kw>
+<kw name="Input username" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-27T11:51:47.396864" level="INFO">Typing text 'test_signup@mail.com' into text field 'xpath=//input[@type="text"]'.</msg>
+<arg>${login_locator.txt_username}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-27T11:51:47.396864" elapsed="0.139241"/>
+</kw>
+<arg>${login.username}</arg>
+<status status="PASS" start="2025-03-27T11:51:47.394858" elapsed="0.141247"/>
+</kw>
+<kw name="Input password" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-27T11:51:47.540444" level="INFO">Typing text 'Aa@123456' into text field 'xpath=//input[@type="password"]'.</msg>
+<arg>${login_locator.txt_password}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-27T11:51:47.540444" elapsed="0.121414"/>
+</kw>
+<arg>${login.password}</arg>
+<status status="PASS" start="2025-03-27T11:51:47.538981" elapsed="0.122877"/>
+</kw>
+<kw name="Click button submit" owner="login_page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-27T11:51:47.661858" level="INFO">Clicking element 'xpath=//button[@type="submit"]'.</msg>
+<arg>${login_locator.btn_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-27T11:51:47.661858" elapsed="0.062583"/>
+</kw>
+<status status="PASS" start="2025-03-27T11:51:47.661858" elapsed="0.062583"/>
+</kw>
+<kw name="Verify login success" owner="login_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${login_locator.pop_up_login_success}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-27T11:51:47.727009" elapsed="0.307051"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-03-27T11:51:48.056542" level="INFO">Current page contains text 'Login successfully'.</msg>
+<arg>${pop_up.pop_up_login_success}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-03-27T11:51:48.034060" elapsed="0.022482"/>
+</kw>
+<status status="PASS" start="2025-03-27T11:51:47.724998" elapsed="0.332517"/>
+</kw>
+<kw name="Close browser" owner="common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-03-27T11:51:48.057947" elapsed="6.194937"/>
+</kw>
+<status status="PASS" start="2025-03-27T11:51:48.057947" elapsed="6.194937"/>
+</kw>
+<status status="PASS" start="2025-03-27T11:51:40.390603" elapsed="13.862281"/>
+</test>
+<status status="PASS" start="2025-03-27T11:51:40.034580" elapsed="14.225245"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assignment">Assignment</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
